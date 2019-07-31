@@ -21,3 +21,7 @@ Manually defining/maintaining prettier rules in your own project risks it fallin
 ```
 "prettier": "eslint-config-vocovo/prettierrc"
 ```
+
+## Maintenance
+
+All contributions are welcome and encouraged. If this standard doensn't suit your purposes it would be better that we modify this standard so it does, rather than overriding it within each project.
