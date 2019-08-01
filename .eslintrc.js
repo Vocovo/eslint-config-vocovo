@@ -2,6 +2,9 @@ const prettierrc = require('./prettierrc')
 
 module.exports = {
   "extends": ["standard-react", "prettier-standard"],
+  "env": {
+    "jest": true
+  },
   "rules": {
     "no-console": [
       "error",
