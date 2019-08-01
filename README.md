@@ -22,6 +22,38 @@ Manually defining/maintaining prettier rules in your own project risks it fallin
 "prettier": "eslint-config-vocovo/prettierrc"
 ```
 
+## Configuring VSCode so linting and auto-fixing work
+
+Firstly, open the VSCode settings (Code -> Preferences -> Settings) in json mode, using the `{}` symbol in the top right of the setting screen.
+
+Then, ensure you have at least the following defined:
+
+```json
+{
+  // "eslint.autoFixOnSave" conflicts with the default editor.formatOnSave,
+  // but we need to use editor.formatOnSave to run Prettier on filetypes ESLint
+  // doesn't handle, like CSS.
+  // We want ESLint to do our formatting, using prettier, for javascript files.
+  // We defer to the standard editor.formatonsave for all other kinds of files.
+  "eslint.autoFixOnSave": true,
+
+  // We enable this, but _disable_ it on the files we want ESLint to handle.
+  "editor.formatOnSave": true,
+
+  // Turn it OFF for JS and JSX, we will do this via eslint
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+
+  // We want to use vanilla Prettier (i.e not via ESLint) for other languages like CSS and HTML.
+  // But we turn it off for JS since we are doing it through Eslint
+  "prettier.disableLanguages": ["javascript", "javascriptreact"]
+}
+```
+
 ## Maintenance
 
-All contributions are welcome and encouraged. If this standard doensn't suit your purposes it would be better that we modify this standard so it does, rather than overriding it within each project.
+All contributions are welcome and encouraged. If this standard doesn't suit your purposes it would be better that we modify this standard so it does, rather than overriding it within each project.
