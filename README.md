@@ -28,7 +28,7 @@ Firstly, open the VSCode settings (Code -> Preferences -> Settings) in json mode
 
 Then, ensure you have at least the following defined:
 
-```json
+```
 {
   // "eslint.autoFixOnSave" conflicts with the default editor.formatOnSave,
   // but we need to use editor.formatOnSave to run Prettier on filetypes ESLint
