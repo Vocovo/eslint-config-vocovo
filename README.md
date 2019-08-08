@@ -30,14 +30,12 @@ Manually defining/maintaining prettier rules in your own project risks it fallin
 
 ```js
 {
-  // "eslint.autoFixOnSave" conflicts with the default editor.formatOnSave,
-  // but we need to use editor.formatOnSave to run Prettier on filetypes ESLint
+  // "eslint.autoFixOnSave" conflicts with the default "editor.formatOnSave",
+  // but we need to use "editor.formatOnSave" to run Prettier on filetypes ESLint
   // doesn't handle, like CSS.
-  // We want ESLint to do our formatting, using prettier, for javascript files.
-  // We defer to the standard editor.formatonsave for all other kinds of files.
   "eslint.autoFixOnSave": true,
 
-  // We enable this, but _disable_ it on the files we want ESLint to handle.
+  // We enable this here, but _disable_ it (below) on the files we want ESLint to handle.
   "editor.formatOnSave": true,
 
   // Turn it OFF for JS and JSX, we will do this via eslint
