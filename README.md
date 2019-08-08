@@ -2,7 +2,7 @@
 
 This VoCoVo linting standard expects developers to use Prettier for code formatting, and ESLint for code smell. This config uses Prettier both inside and outside ESLint. ESLint is only concerned with Javascript, but Prettier can format many different languages. The detail below explains how to use Prettier to good effect in both situations.
 
-## Installation
+## Installation in your project
 
 Installation does not assume any previous packages having been installed. Thus the dependency list below includes `eslint` & `prettier`, which may already be installed.
 
@@ -24,20 +24,18 @@ Manually defining/maintaining prettier rules in your own project risks it fallin
 
 ## Configuring VSCode so linting and auto-fixing work
 
-Firstly, open the VSCode settings (Code -> Preferences -> Settings) in json mode, using the `{}` symbol in the top right of the setting screen.
+1. Install [Prettier for VSCode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+2. Install [ESLint for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+3. Open the VSCode settings (Code -> Preferences -> Settings) in json mode, using the `{}` symbol in the top right of the setting screen. then, ensure you have at least the following defined:
 
-Then, ensure you have at least the following defined:
-
-```
+```js
 {
-  // "eslint.autoFixOnSave" conflicts with the default editor.formatOnSave,
-  // but we need to use editor.formatOnSave to run Prettier on filetypes ESLint
+  // "eslint.autoFixOnSave" conflicts with the default "editor.formatOnSave",
+  // but we need to use "editor.formatOnSave" to run Prettier on filetypes ESLint
   // doesn't handle, like CSS.
-  // We want ESLint to do our formatting, using prettier, for javascript files.
-  // We defer to the standard editor.formatonsave for all other kinds of files.
   "eslint.autoFixOnSave": true,
 
-  // We enable this, but _disable_ it on the files we want ESLint to handle.
+  // We enable this here, but _disable_ it (below) on the files we want ESLint to handle.
   "editor.formatOnSave": true,
 
   // Turn it OFF for JS and JSX, we will do this via eslint
