@@ -24,9 +24,9 @@ Manually defining/maintaining prettier rules in your own project risks it fallin
 
 ## Configuring VSCode so linting and auto-fixing work
 
-Firstly, open the VSCode settings (Code -> Preferences -> Settings) in json mode, using the `{}` symbol in the top right of the setting screen.
-
-Then, ensure you have at least the following defined:
+1. Install [Prettier for VSCode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+2. Install [ESLint for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+3. Open the VSCode settings (Code -> Preferences -> Settings) in json mode, using the `{}` symbol in the top right of the setting screen. then, ensure you have at least the following defined:
 
 ```js
 {
