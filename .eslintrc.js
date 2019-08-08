@@ -6,18 +6,11 @@ module.exports = {
     "jest": true
   },
   "rules": {
+    "generator-star-spacing": ["warn"],
     "no-console": [
       "error",
       {
-        "allow": ["warn", "error", "info"]
-      }
-    ],
-    "generator-star-spacing": [
-      "error",
-      {
-        "before": false,
-        "after": false,
-        "anonymous": "after"
+        "allow": ["warn", "error", "info", "group", "groupEnd"]
       }
     ],
     "no-throw-literal": 0,
