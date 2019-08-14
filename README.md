@@ -12,6 +12,10 @@ Run the following within your project:
 
 `yarn add -D eslint prettier eslint-config-prettier eslint-config-prettier-standard eslint-config-standard eslint-config-standard-react eslint-plugin-import eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-standard eslint-plugin-react prettier-config-standard pretty-quick`
 
+Install this repo, the vocovo lint config, by adding the following to your `devDependencies`:
+
+`"eslint-config-vocovo": "vocovo/eslint-config-vocovo",`
+
 ### For formatting independent of ESLint
 
 If you choose to run prettier on its own, e.g as part of a git hook with `pretty-quick`, you will need to give prettier a config. Typically this is done with a `.prettierrc` file into which you add rules.
