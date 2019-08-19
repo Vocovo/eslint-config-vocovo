@@ -14,7 +14,7 @@ Installation does not assume any previous packages having been installed. Thus t
 
 2. Install this repo, the vocovo lint config, by adding the following to your `devDependencies`:
 
-`"eslint-config-vocovo": "vocovo/eslint-config-vocovo",`
+`"eslint-config-vocovo": "https://github.com/vocovo/eslint-config-vocovo",`
 
 ### For formatting independent of ESLint
 
