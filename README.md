@@ -16,6 +16,8 @@ Installation does not assume any previous packages having been installed. Thus t
 
 `"eslint-config-vocovo": "https://github.com/vocovo/eslint-config-vocovo",`
 
+and run `yarn` to install it
+
 3. Add these lines to your npm `scripts` section:
 
 ```
