@@ -23,6 +23,17 @@ Installation does not assume any previous packages having been installed. Thus t
 "lint:ci": "eslint -f summary --ext .js src",
 ```
 
+4. Add the following `.eslintrc` to your project root
+
+```
+{
+  "extends": ["vocovo"],
+  "env": {
+    "mocha": true
+  }
+}
+```
+
 ### For formatting independent of ESLint
 
 If you choose to run prettier on its own, e.g as part of a git hook with `pretty-quick`, you will need to give prettier a config. Typically this is done with a `.prettierrc` file into which you add rules.
