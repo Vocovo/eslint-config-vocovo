@@ -16,11 +16,24 @@ Installation does not assume any previous packages having been installed. Thus t
 
 `"eslint-config-vocovo": "https://github.com/vocovo/eslint-config-vocovo",`
 
+and run `yarn` to install it
+
 3. Add these lines to your npm `scripts` section:
 
 ```
 "lint": "eslint --ext .js src",
 "lint:ci": "eslint -f summary --ext .js src",
+```
+
+4. Add the following `.eslintrc` to your project root
+
+```
+{
+  "extends": ["vocovo"],
+  "env": {
+    "mocha": true
+  }
+}
 ```
 
 ### For formatting independent of ESLint
