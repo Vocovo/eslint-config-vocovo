@@ -25,14 +25,12 @@ and run `yarn` to install it
 "lint:ci": "eslint -f summary --ext .js src",
 ```
 
-4. Add the following `.eslintrc` to your project root
+4. Add an `.eslintrc` file to your project root
 
 ```
 {
   "extends": ["vocovo"],
-  "env": {
-    "mocha": true
-  }
+  // ...project-specific settings here
 }
 ```
 
