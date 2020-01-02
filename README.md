@@ -52,10 +52,18 @@ Manually defining/maintaining prettier rules in your own project risks it fallin
 
 ```js
 {
-  // "eslint.autoFixOnSave" conflicts with the default "editor.formatOnSave",
-  // but we need to use "editor.formatOnSave" to run Prettier on filetypes ESLint
-  // doesn't handle, like CSS.
+  // ESLint auto-fixes JS by using Prettier in the background. ESLint requires one of two possible settings 
+  // depending on the VSCode ESLint plugin version: eslint.autoFixOnSave or editor.codeActionsOnSave.
+  // When using Prettier on non-JS files, Prettier expects to see editor.formatOnSave.
+  // Thus both settings are necessary.
+
+  // INSTRUCTIONS FOR VSCODE ESLINT PLUGING 1.X (delete as applicable)
   "eslint.autoFixOnSave": true,
+   
+  // INSTRUCTIONS FOR VSCODE ESLINT PLUGING 2.X (delete as applicable)
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 
   // We enable this here, but _disable_ it (below) on the files we want ESLint to handle.
   "editor.formatOnSave": true,
