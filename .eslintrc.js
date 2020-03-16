@@ -1,7 +1,7 @@
 const prettierrc = require('./prettierrc')
 
 module.exports = {
-  "extends": ["standard-react", "prettier-standard"],
+  "extends": ["standard-react", "prettier-standard", "jest"],
   "env": {
     "jest": true
   },
