@@ -30,6 +30,7 @@ module.exports = {
     ],
     "react/jsx-no-bind": 0,
     "standard/no-callback-literal": 0,
+    "no-warning-comments": "warn",
     "prettier/prettier": [
       "error",
       prettierrc
