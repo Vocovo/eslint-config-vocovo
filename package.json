@@ -1,6 +1,5 @@
 {
-  "name": "eslint-config-vocovo",
-  "private": true,
+  "name": "@vocovo/eslint-config-vocovo",
   "version": "1.0.0",
   "description": "A reasonable lint standard for VoCoVo javascript projects. Uses ESLint and Prettier",
   "main": "index.js",
@@ -34,5 +33,8 @@
     "prettier": "^1.18.2",
     "prettier-config-standard": "^1.0.1",
     "pretty-quick": "^1.11.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
