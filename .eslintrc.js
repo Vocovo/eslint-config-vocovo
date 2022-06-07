@@ -1,7 +1,7 @@
 const prettierrc = require('./prettierrc')
 
 module.exports = {
-  "extends": ["standard-react", "prettier-standard", "jest"],
+  "extends": ["prettier-standard"],
   "env": {
     "jest": true
   },
@@ -28,8 +28,8 @@ module.exports = {
         "ignoreRestSiblings": true
       }
     ],
-    "react/jsx-no-bind": 0,
     "standard/no-callback-literal": 0,
+    "no-warning-comments": "warn",
     "prettier/prettier": [
       "error",
       prettierrc
