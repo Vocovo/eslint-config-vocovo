@@ -10,13 +10,13 @@ Installation does not assume any previous packages having been installed. Thus t
 
 1. Run the following within your project:
 
-`yarn add -D eslint prettier eslint-config-prettier eslint-config-prettier-standard eslint-config-standard eslint-config-standard-react eslint-plugin-import eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-standard eslint-plugin-react prettier-config-standard pretty-quick`
+`npm install --save-dev eslint prettier eslint-config-prettier eslint-config-prettier-standard eslint-config-standard eslint-config-standard-react eslint-plugin-import eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-standard eslint-plugin-react prettier-config-standard pretty-quick`
 
 2. Install this repo, the vocovo lint config, by adding the following to your `devDependencies`:
 
 `"eslint-config-vocovo": "https://github.com/vocovo/eslint-config-vocovo",`
 
-and run `yarn` to install it
+and run `npm` to install it
 
 3. Add these lines to your npm `scripts` section:
 
