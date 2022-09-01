@@ -16,7 +16,7 @@
     "prettier"
   ],
   "repository": "git@github.com:vocovo/eslint-config-vocovo.git",
-  "author": "Dave Cranwell",
+  "author": "Vocovo",
   "license": "MIT",
   "dependencies": {
     "eslint-config-prettier": "^6.0.0",
