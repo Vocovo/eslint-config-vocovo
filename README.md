@@ -4,35 +4,11 @@ This VoCoVo linting standard expects developers to use Prettier for code formatt
 
 ## Installation in your project
 
-Installation does not assume any previous packages having been installed. Thus the dependency list below includes `eslint` & `prettier`, which may already be installed.
+You will need to have `eslint` and `prettier` installed to use this: `npm install --save-dev eslint prettier`.
 
-### For formatting within ESLint
+1. Install with: `npm install --save-dev eslint-config-vocovo`
 
-1. Run the following within your project:
-
-`npm install --save-dev eslint prettier eslint-config-prettier eslint-config-prettier-standard eslint-config-standard eslint-config-standard-react eslint-plugin-import eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-standard eslint-plugin-react prettier-config-standard pretty-quick`
-
-2. Install this repo, the vocovo lint config, by adding the following to your `devDependencies`:
-
-`"eslint-config-vocovo": "https://github.com/vocovo/eslint-config-vocovo",`
-
-and run `npm` to install it
-
-3. Add these lines to your npm `scripts` section:
-
-```
-"lint": "eslint --ext .js src",
-"lint:ci": "eslint -f summary --ext .js src",
-```
-
-4. Add an `.eslintrc` file to your project root
-
-```
-{
-  "extends": ["vocovo"],
-  // ...project-specific settings here
-}
-```
+2. Add `"extends": ["vocovo"]` to your `.eslintrc` file to enable the config
 
 ### For formatting independent of ESLint
 
