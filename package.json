@@ -18,8 +18,7 @@
   "repository": "git@github.com:vocovo/eslint-config-vocovo.git",
   "author": "Dave Cranwell",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^6.1.0",
+  "dependencies": {
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-prettier-standard": "^3.0.1",
     "eslint-config-standard": "^13.0.1",
@@ -30,8 +29,11 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-standard": "^4.0.0",
+    "prettier-config-standard": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
     "prettier": "^1.18.2",
-    "prettier-config-standard": "^1.0.1",
     "pretty-quick": "^1.11.1"
   }
 }
