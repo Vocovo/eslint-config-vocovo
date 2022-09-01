@@ -33,8 +33,5 @@
     "prettier": "^1.18.2",
     "prettier-config-standard": "^1.0.1",
     "pretty-quick": "^1.11.1"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
