@@ -19,22 +19,21 @@
   "author": "Vocovo",
   "license": "MIT",
   "dependencies": {
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-config-prettier-standard": "^3.0.1",
-    "eslint-config-standard": "^13.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "prettier-config-standard": "^1.0.1"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier-standard": "^4.0.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.1",
+    "prettier-config-standard": "^5.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
-    "prettier": "^1.18.2"
+    "eslint": "^8.23.0",
+    "prettier": "^2.7.1"
   },
   "peerDependencies": {
-    "eslint": "^6.1.0",
-    "prettier": "^1.18.2"
+    "eslint": "^8.23.0",
+    "prettier": "^2.7.1"
   }
 }
