@@ -12,7 +12,7 @@ You will need to have `eslint` and `prettier` installed to use this: `npm instal
 
 ### For formatting independent of ESLint
 
-If you choose to run prettier on its own, e.g as part of a git hook with `pretty-quick`, you will need to give prettier a config. Typically this is done with a `.prettierrc` file into which you add rules.
+If you choose to run prettier on its own you will need to give prettier a config. Typically this is done with a `.prettierrc` file into which you add rules.
 
 Manually defining/maintaining prettier rules in your own project risks it falling out of sync with this config, so one way to use this project's `.prettierrc` file _without_ defining rules manually is to add a `"prettier"` key within your `package.json` thus:
 
