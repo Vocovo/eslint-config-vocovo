@@ -61,3 +61,10 @@ Manually defining/maintaining prettier rules in your own project risks it fallin
 ## Maintenance
 
 All contributions are welcome and encouraged. If this standard doesn't suit your purposes it would be better that we modify this standard so it does, rather than overriding it within each project.
+
+## Publishing
+
+To publish a version:
+1. Create a PR which bumps the version number and get it reviewed and merged
+2. Create a release on Github with the new version as the tag and title (no description needed), the release should target `main`
+3. Checkout `main`, make sure the branch is up to date, and run `npm publish`. You will need an authorised NPM account.
