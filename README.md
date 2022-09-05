@@ -67,4 +67,5 @@ All contributions are welcome and encouraged. If this standard doesn't suit your
 To publish a version:
 1. Create a PR which bumps the version number and get it reviewed and merged
 2. Create a release on Github with the new version as the tag and title (no description needed), the release should target `main`
-3. Checkout `main`, make sure the branch is up to date, and run `npm publish`. You will need an authorised NPM account.
+3. Authorise your NPM account either with `npm login` (if you have an account) or by using the `Publish token` listed at the bottom of the `NPM - Machine User` entry in 1Password. The publish token should be set in an environment variable `NPM_PUBLISH_TOKEN`. If you use the publish token, you will need to use the two factor code in 1Password when publishing.
+4. Checkout `main`, make sure the branch is up to date, and run `npm publish`.
