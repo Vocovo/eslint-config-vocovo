@@ -1,6 +1,6 @@
 {
-  "name": "@vocovo/eslint-config-vocovo",
-  "version": "1.0.1",
+  "name": "eslint-config-vocovo",
+  "version": "1.0.2",
   "description": "A reasonable lint standard for VoCoVo javascript projects. Uses ESLint and Prettier",
   "main": "index.js",
   "scripts": {
