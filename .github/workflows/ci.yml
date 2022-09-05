@@ -35,5 +35,6 @@ jobs:
           key: ${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ env.cache-name }}-
+      - run: rm .npmrc # Remove this so that NPM doesn't try to use an auth token
       - run: npm ci --ignore-scripts
       - run: npm run lint
